@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/stencil-vdom-bug.esm.js"></script>
+  <script nomodule src="/build/stencil-vdom-bug.js"></script>
+
+</head>
+
+<body>
+
+  <parent-element>
+    <!--parent-element uses child-element in it's shadow DOM and we want this span to render inside that child-element's shadow DOM-->
+    <span slot="parent-slot">Finally</span>
+  </parent-element>
+
+</body>
+
+</html>
